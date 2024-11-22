@@ -15,7 +15,7 @@ public class Coffee {
     public void displayCoffeeMenu() {
         int choice, quantity, saveOrder;
         while (true) {
-            System.out.println("\nBreakfast Menu:");
+            System.out.println("\nCoffee Menu:");
             for (int i = 0; i < MenuData.NUM_COFFEE_ITEMS; i++) {
                 System.out.printf("%d. %s - %d PHP\n", i + 1, MenuData.coffeeItemNames[i], MenuData.coffeeItemPrices[i]);
             }

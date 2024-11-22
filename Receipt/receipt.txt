@@ -1,40 +1,20 @@
-Receipt
+====================================
+              ORDER #1
 ====================================
 Order Summary:
-Item: Pancake
+Item: Latte
 Quantity: 5
-Price: 195 PHP
+Price: 400 PHP
 
-Total Price: 195 PHP
-Dining Option: Take Out
-Payment Method: Cash
-====================================
-Receipt
-====================================
-Order Summary:
-Item: Pancake
+Item: Espresso
 Quantity: 5
-Price: 195 PHP
+Price: 275 PHP
 
-Total Price: 195 PHP
-Dining Option: Take Out
-Payment Method: Cash
-====================================
-Receipt
-====================================
-Order Summary:
-Item: Pancake
-Quantity: 4
-Price: 156 PHP
+Item: Regular Coffee
+Quantity: 5
+Price: 250 PHP
 
-Total Price: 156 PHP
-Dining Option: Take Out
-Payment Method: Cash
-====================================
-Receipt
-====================================
-Order Summary:
-Total Price: 0 PHP
+Total Price: 925 PHP
 Dining Option: Take Out
 Payment Method: Cash
 ====================================

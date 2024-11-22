@@ -15,7 +15,7 @@ public class ChickenAndPlattersMenu{
     public void displayChickenAndPlatters() {
         int choice, quantity, saveOrder;
         while (true) {
-            System.out.println("\nBreakfast Menu:");
+            System.out.println("\nChicken And Platters Menu:");
             for (int i = 0; i < MenuData.NUM_CHICKENANDPLATTERS_ITEMS; i++) {
                 System.out.printf("%d. %s - %d PHP\n", i + 1, MenuData.chickenAndPlattersItemNames[i], MenuData.chickenAndPlattersItemPrices[i]);
             }
