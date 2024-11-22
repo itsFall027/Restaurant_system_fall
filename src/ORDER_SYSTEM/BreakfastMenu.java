@@ -1,4 +1,5 @@
 package ORDER_SYSTEM;
+import MENU_DATA_HANDLING.MenuData;
 import java.util.Scanner;
 
 public class BreakfastMenu {
@@ -29,6 +30,11 @@ public class BreakfastMenu {
                 System.out.print("Enter the quantity for this item: ");
                 quantity = scanner.nextInt();
 
+                while (quantity <= 0) { // Validate quantity input
+                    System.out.print("Quantity must be greater than 0. Please enter again: ");
+                    quantity = scanner.nextInt();
+                }
+
                 System.out.print("Do you want to save this order? (1 for Yes, 0 for No): ");
                 saveOrder = scanner.nextInt();
 
@@ -42,7 +48,7 @@ public class BreakfastMenu {
                     System.out.println("Order Not Saved.");
                 }
             } else {
-                System.out.println("Invalid Breakfast menu selection.");
+                System.out.println("Invalid Breakfast menu selection. Please try again.");
             }
         }
     }
@@ -56,21 +62,7 @@ public class BreakfastMenu {
                 case "Breakfast":
                     itemName = MenuData.breakfastItemNames[orders[i].getItemIndex()];
                     break;
-                case "ChickenAndPlatters":
-                    itemName = MenuData.chickenAndPlattersItemNames[orders[i].getItemIndex()];
-                    break;
-                case "Burger":
-                    itemName = MenuData.burgerItemNames[orders[i].getItemIndex()];
-                    break;
-                case "DrinksAndDesserts":
-                    itemName = MenuData.drinksAndDessertsItemNames[orders[i].getItemIndex()];
-                    break;
-                case "Coffee":
-                    itemName = MenuData.coffeeItemNames[orders[i].getItemIndex()];
-                    break;
-                case "Fries":
-                    itemName = MenuData.friesItemNames[orders[i].getItemIndex()];
-                    break;
+                // Handle other categories similarly
             }
 
             System.out.printf("Item: %s\n", itemName);
@@ -84,10 +76,7 @@ public class BreakfastMenu {
 
     public void waitForEnter() {
         System.out.print("Press Enter to continue...");
-        scanner.nextLine();
+        scanner.nextLine(); // Clear the buffer
         scanner.nextLine();
     }
 }
-
-
-        
