@@ -25,7 +25,7 @@ public class AdminManager {
     public boolean login(String username, String password) {
         for (int i = 0; i < count; i++) {
             if (admins[i].getUsername().equals(username) && admins[i].getPassword().equals(password)) {
-                return true; 
+                return false; 
             }
         }
         return false;
